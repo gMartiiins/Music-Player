@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player Music</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="Principal">
+        <div class="quadrado1">
+           <div class="blocoImagem">
+                <img class="albumImagem" src="" alt="Album Musica">
+           </div>
+           
+            <div class="blocoAudio">
+                <div class="nomeMusica"></div>
+                <div class="blocoBotoes">
+                    <div class="blocoRetornar">
+                        <buttom><img class="bRetornar" onclick= "voltarMusica()" src="./botoes/retornar.png"></buttom>
+                    </div>
+                    <div class="blocoPlayPause">
+                        <buttom class="bPlay"><img class="play" src="./botoes/play.png"></buttom>
+                        <buttom class="bPause"><img class="pause" src="./botoes/pause.png"></buttom>
+                    </div>
+                    <div class="blocoAvancar" onclick="avancarMusica()">
+                        <buttom><img class="bAvancar"  src="./botoes/avancar.png"><buttom>
+                    </div>
+                </div>
+
+           </div>
+           <audio class="musica"></audio>
+            <div class="barraMusica">
+                <div class="trilhaMusica"></div>
+                <div class="trilhaBola"></div>
+            </div>
+
+           <div class="blocoTempo">
+                <div class="tempoMusica">00:00</div>
+                <div class="tempoMusicaTotal">00:00</div>
+            </div>   
+
+            <div class="blocoVolume">
+                
+                <div class="botaoMute">
+                    <bottom class="blocoVolumeOn" ><img class="volumeOn" src="./botoes/volumeOn.png"></bottom>
+                    <bottom class="blocoVolumeOff"><img class="volumeOff" src="./botoes/volumeOff.png"></bottom>
+                </div>
+
+                <div class="blocoV">
+                    <div class="bVolume" onclick="alterarVolume(event)">
+                        <div class="barraVolume"></div>
+                        <div class="volumeTrilha"></div>
+                        <div class="bolaVolume"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>

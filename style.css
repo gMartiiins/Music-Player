@@ -1,0 +1,328 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Roboto+Slab:wght@900&family=Ubuntu:wght@300&display=swap');
+body{
+    display: flex;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(21, 21, 21);
+}
+.Principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 800px;
+    height: 500px;
+    background-color: rgb(0, 36, 34);
+    border-radius: 5px;
+}
+.quadrado1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 220px;
+    height: 380px;
+    background-color: rgb(3, 49, 48);
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.477);
+}
+.blocoImagem{
+    display: flex;
+    margin-top: 25px;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(0, 36, 34);
+    border-radius: 10px;
+    border: 4px solid rgb(0, 36, 34);
+   
+}
+.albumImagem{
+    border-radius: 10px;
+    width: 100%;
+   
+
+}
+.nomeMusica{
+    padding-top: 3px;
+    box-sizing: border-box;
+    width: 150px;
+    height: 40px;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 5px;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+}
+
+.blocoAudio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+.blocoBotoes{
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.bAvancar, .bRetornar, .pause{
+    width: 20px;
+}
+.nomeMusica{
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 20px;
+    font-size: 15px;
+    letter-spacing: 2px;
+    line-height: 130%
+}
+.blocoPlayPause{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    width: 34px;
+    height: 34px;
+    border-radius: 100px;   
+}
+
+.bPlay{
+    display: block;
+    padding-top: 2px;
+    padding-left: 5px;
+    position: absolute;
+    z-index: 1;
+   
+}
+.bPause{
+    padding-top: 2px;
+    padding-left: 1px;
+    display: none;
+    position: absolute;
+    z-index: 2;
+    
+}
+.play, .pause{  
+   height: 21px;
+   width: 18.375px;
+}
+
+.play:hover, .pause:hover{
+    height: 23px;
+    width: 20.375px;
+    filter: drop-shadow(0px 5px 2px rgb(0, 103, 98));
+}
+
+.play:active, .pause:active{ 
+    height: 21px;
+    width: 18.375px
+}
+
+
+.blocoRetornar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 31px;
+    height: 31px;
+    padding-top: 4px;
+    padding-right: 1px;
+    border-radius: 100px;
+  
+}
+
+.bRetornar{ 
+    height: 19px;
+    width: 21px;
+    
+}
+.bRetornar:hover{
+    height: 21px;
+    width: 23px;
+    filter: drop-shadow(3px 3px 2px rgb(0, 103, 98));
+    
+}
+.bRetornar:active{
+    height: 19px;
+    width: 21px;
+    box-shadow: none;
+    filter: none;
+}
+
+.bAvancar:hover{
+    height: 22px;
+    width: 22px;
+    filter: drop-shadow(-3px 3px 2px rgb(0, 103, 98));
+}
+.bAvancar:active{
+    height: 20px;
+    width: 20px;
+    filter: none;
+}
+
+
+.blocoAvancar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    width: 31px;
+    height: 31px;
+    padding-top: 3px;
+    padding-left: 2px;
+    display: flex;
+    display: flex;
+}
+
+
+.blocoTempo{
+    padding-top: 6px;
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    font-size: 13px;
+}
+
+.blocoDireita{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 380px;
+    
+    justify-content: space-between;
+}
+
+.quadrado2{
+    width: auto;
+    height: 200px;
+    background-color: rgb(54, 0, 75);
+    border-radius: 10px;
+    background-color: rgb(3, 49, 48);
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.477);
+}
+
+.barraMusica {
+    width: 150px;
+    height: 4px;
+    background-color: #ffffff;
+    position: relative;
+    cursor: pointer;
+    
+  }
+  
+.trilhaMusica {
+    width: 0;
+    height: 60%;
+    background-color: rgb(0, 103, 98);
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid rgb(0, 103, 98);
+   
+    
+  }
+  
+.trilhaBola {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: -1;
+    left: 0;
+    border-radius: 50%;
+    top: -4px;
+}
+
+.trilhaBola:hover{
+    background-color: rgb(0, 103, 98);
+   
+}
+
+.blocoVolume{
+    padding-top: 6px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 70px; 
+}
+
+.botaoMute{
+    display: flex;
+    height: 50%;
+    justify-content:center;
+   
+   
+}
+.blocoVolumeOn{ 
+    top: -1px;
+    
+}
+.volumeOn{  
+    width: 21px;
+  }
+
+
+.volumeOn:active{
+    width: 19px;
+    height: 13.422px;
+}
+
+.blocoVolumeOff{
+    display: none;
+    top: -1px;
+  
+}
+.volumeOff{ 
+    width: 19px; 
+    height: 14.625px;
+}
+
+.volumeOff:active{ 
+    width: 18px; 
+    height: 13.625px;
+}
+
+.blocoV{
+   padding: 8px;
+    width: 70px;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bVolume {
+    
+    width: 70px;
+    height: 5px;
+    background-color: #e9e9e9;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+}
+.volumeTrilha {
+    width: 0;
+    height: 100%;
+    background-color: rgb(0, 159, 151);
+    border-radius: 4px;
+    transition: width 0.2s ease;
+} 
+.bolaVolume {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(0, 159, 151);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+    transition: left 0.2s ease;
+}
